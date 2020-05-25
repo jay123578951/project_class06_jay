@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title><%- title %></title>
+    <!-- css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="./assets/style/all.css">
+    <!-- js -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+  </head>
+
+  <body>
+
+    <header class="bd-navbar">
+      <div class="container">
+        <nav class="navbar p-0 flex-row-reverse flex-md-row">
+          <!-- mobile shopping_car -->
+          <a href="#" class="navbar-nav-link d-block d-md-none">
+            <span class="material-icons nav-link-icon">shopping_cart</span>
+          </a>
+          <!-- Logo -->
+          <a class="navbar-brand py-3 py-md-4" href="#">Craftsman</a>
+          <!-- 漢堡 -->
+          <button class="openbtn" onclick="openNav()">
+            <span class="material-icons">dehaze</span>
+          </button> 
+          <!-- desktop menu -->
+            <div class="navbar-nav d-none d-md-flex flex-row">
+              <a class="nav-item mr-6 navbar-nav-link" href="#">Product<span class="sr-only">(current)</span></a>
+              <a class="nav-item mr-6 navbar-nav-link" href="#">Blog</a>
+              <a class="nav-item mr-6 navbar-nav-link" href="#">Contact</a>
+              <a class="nav-item navbar-nav-link disabled d-md-block d-none" href="#" tabindex="-1" aria-disabled="true">
+                <span class="material-icons nav-link-icon">shopping_cart</span>
+              </a>
+            </div>
+          <!-- mobile menu -->
+          <div id="mySidepanel" class="sidepanel vh-100">
+            <div class="container">
+              <div class="row">
+                <div class="col-sm d-flex flex-wrap justify-content-between align-items-center">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                    <span class="material-icons">close</span>
+                  </a>
+                  <a href="#" class="mobile-shopping-car">
+                    <span class="material-icons nav-link-icon">shopping_cart</span>
+                  </a>
+                  <ul class="list-unstyled w-100 text-left m-0 p-0">
+                    <li class="">
+                      <a class="collapsible py-3 border-bottom border-dark d-flex justify-content-between align-items-center">
+                        <h4 class="h4 font-weight-normal">Product</h4>
+                        <span class="material-icons collapsible-moreIcon">expand_more</span>
+                        <span class="material-icons collapsible-lessIcon">expand_less</span>
+                      </a>
+                      <div class="collapsibleContent">
+                        <ul class="list-unstyled text-left text-darkGray m-0 p-0">
+                          <li class="my-3">All<sup>24</sup></li>
+                          <li class="mb-3">Bowl<sup>10</sup></li>
+                          <li class="mb-3">Cup<sup>8</sup></li>
+                          <li class="mb-3">Plate<sup>3</sup></li>
+                          <li class="pb-3 border-bottom border-dark">Vase<sup>3</sup></li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="">
+                      <a class="collapsible py-3 border-bottom border-dark d-flex justify-content-between align-items-center">
+                        <h4 class="h4 font-weight-normal">Product</h4>
+                        <span class="material-icons collapsible-moreIcon">expand_more</span>
+                        <span class="material-icons collapsible-lessIcon">expand_less</span>
+                      </a>
+                      <div class="collapsibleContent">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                    </li>
+                    <li class="">
+                      <a class="collapsible py-3 border-bottom border-dark d-flex justify-content-between align-items-center">
+                        <h4 class="h4 font-weight-normal">Product</h4>
+                        <span class="material-icons collapsible-moreIcon">expand_more</span>
+                        <span class="material-icons collapsible-lessIcon">expand_less</span>
+                      </a>
+                      <div class="collapsibleContent">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <%- contents %>
+
+    <footer>
+      <section class="subscribe">
+        <div class="subscribe-cnt h-100 py-4 py-md-0 d-flex align-items-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm col-md-5">
+                <h2 class="h2 text-white mb-4 mb-md-6">Subscribe for news<br>and special offers!</h2>
+                <div class="input-group">
+                  <input type="text" class="form-control text-lightGray border-lightGray" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <div class="input-group-append">
+                    <button class="btn btn-sm btn-primary" type="button" id="button-addon2">Subscribe</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bd-footer">
+        <div class="container">
+          <div class="py-4 py-md-0 d-flex flex-wrap flex-md-nowrap justify-content-between align-items-center">
+            <h2 class="bd-footer-logo d-inline-block mb-6 my-md-5 mr-md-3">
+              <a href="#" class="text-white">Craftsman</a>
+            </h2>
+            <p class="bd-footer-copy text-lightGray m-0 order-3 order-md-2">© 2020. All Rights Reserved.</p>
+            <ul class="bd-footer-links p-0 mb-6 mb-md-0 d-flex flex-wrap flex-md-nowrap flex-grow-1 justify-content-end align-items-center order-2 order-md-3">
+              <li class="mb-3 mb-md-0 mr-md-6"><a href="#">Purchase Policy</a></li>
+              <li class="mb-3 mb-md-0 mr-md-6"><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </footer>
+
+    <script src="./assets/js/vendors.js"></script>
+    <script src="./assets/js/all.js"></script>
+  </body>
+
+</html>

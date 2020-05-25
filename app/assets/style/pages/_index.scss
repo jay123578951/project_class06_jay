@@ -1,0 +1,116 @@
+// Banner
+.banner {
+  position: relative;
+}
+.banner-info {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  @include pad() {
+    height: auto;
+  }
+}
+.banner-info-main {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  @include pad() {
+    position: relative;
+    top: 0;
+    transform: translateY(0);
+  }
+}
+.banner-info-btn {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  @include pad() {
+    position: relative;
+    margin-bottom: 0;
+  }
+}
+.banner-bg {
+  width: 100%;
+  height: 100vh;
+  background: url('../images/index-1.jpg') center center no-repeat;
+  background-size: cover;
+  @include pad() {
+    width: calc(50% - 0.875rem);
+    height: 800px;
+  }
+}
+.banner-title-mainTitle {
+  color: #fff;
+  font-size: $h2-font-size;
+  @include pad() {
+    color: $body-color;
+  }
+}
+.banner-title-subtitle {
+  color: $lightGray;
+  @include pad() {
+    color: $darkGray;
+  }
+}
+
+// Features
+.specialClays-bg {
+  background: url('../images/index-2.jpg') center center no-repeat;
+}
+.lessIsMore-bg {
+  background: url('../images/index-3.jpg') center center no-repeat;
+}
+.marvelousDetail-bg {
+  background: url('../images/index-4.jpg') center center no-repeat;
+}
+.features-bg {
+  height: 244px;
+  background-size: cover;
+  @include pad() {
+    height: 400px;
+  }
+}
+.features-info {
+  width: 100%;
+  height: 100%;
+}
+
+// Art Director
+.artDirector {
+  background: url('../images/index-5.jpg') center center no-repeat;
+  height: 400px;
+  background-size: cover;
+}
+.artDirector-h3 {
+  line-height: 1.5;
+  @include pad() {
+    line-height: 1.2;
+  }
+}
+
+// Products
+.card-img-block {
+  position: relative;
+  width: 100%;
+  padding-top: calc(100% * 1);
+  img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  .card-onSale {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+  }
+  .card-img-top {
+    border-radius: 0.125rem;
+  }
+}

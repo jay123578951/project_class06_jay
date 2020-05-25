@@ -1,0 +1,22 @@
+// btn
+.btn {
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+  border-color: $primary;
+  padding: .9375rem 0;
+}
+.btn-sm {
+  width: 100%;
+  @include pad() {
+    width: 160px;
+  }
+}
+.btn-md {
+  width: 265px;
+}
+
+// text
+.text-primary {
+  font-weight: $font-weight-bold;
+  color: $primary;
+}

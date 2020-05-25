@@ -1,0 +1,70 @@
+.subscribe {
+  position: relative;
+  height: 100%;
+  background: url('../images/footer.jpg') center center no-repeat;
+  background-size: cover;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+  }
+  @include pad() {
+    height: 400px;
+  }
+}
+.form-control {
+  background: none;
+}
+.input-group-append {
+  button {
+    width: 120px;
+    @include pad() {
+      width: 160px;
+    }
+  }
+}
+.bd-footer {
+  background: $body-color;
+}
+.bd-footer-logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  line-height: 29px;
+  width: 100%;
+  @include pad() {
+    width: auto;
+  }
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+.bd-footer-copy {
+  font-size: $font-size-sm;
+  width: 100%;
+  @include pad() {
+    width: auto;
+  }
+}
+.bd-footer-links {
+  font-size: $font-size-sm;
+  li {
+    width: 100%;
+    @include pad() {
+      width: auto;
+    }
+  }
+  a {
+    color: $light;
+    &:hover {
+      color: $primary;
+    }
+  }
+}

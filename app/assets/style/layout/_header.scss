@@ -1,0 +1,120 @@
+.bd-navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100000;
+  .navbar-brand {
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    line-height: 29px;
+    @include pad() {
+      color: $body-color;
+    }
+  }
+  .navbar-nav-link {
+    color: #fff;
+    &:hover {
+      color: $primary;
+    }
+  }
+  .nav-link-icon {
+    vertical-align: middle;
+  }
+  .navbar-toggler {
+    line-height: 0;
+  }
+  .navbar-toggler-icon {
+    background-color: #fff;
+    @include pad() {
+      background-color: $body-color;
+    }
+  }
+  .openbtn {
+    .material-icons {
+      color: #fff;
+    }
+  }  
+}
+.header-scroll {
+  background: #fff;
+  .navbar-brand {
+    color: $body-color;
+  }
+  .navbar-nav-link {
+    color: $body-color;
+  }
+  .openbtn {
+    .material-icons {
+      color: $body-color;
+    }
+  }
+}
+
+// 漢堡
+.openbtn {
+  display: inline-block;
+  background: none;
+  border: none;
+  line-height: 0;
+  cursor: pointer;
+  @include pad() {
+    display: none;
+  }
+}
+
+// mobile menu
+.sidepanel  {
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.2s;
+  background: #fff;
+  a {
+      overflow:hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+  }
+}
+.closebtn {
+  display: block;
+  line-height: 0;
+  padding: 18.5px 0;
+  .material-icons {
+    color: $body-color;
+  }         
+}
+.mobile-shopping-car {
+  line-height: 0;
+  .material-icons {
+    color: $body-color;
+  }
+  &:hover {
+    .material-icons {
+      color: $primary;
+    }      
+  }
+}
+.collapsible-moreIcon {
+  display: inline-block;
+}
+.collapsible-lessIcon {
+  display: none;
+}
+.active {
+  .collapsible-moreIcon {
+    display: none;
+  }
+  .collapsible-lessIcon {
+    display: inline-block;
+  }
+}
+.collapsibleContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
