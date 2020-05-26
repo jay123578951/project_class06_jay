@@ -13,7 +13,7 @@
     background: #000;
     opacity: .5;
   }
-  @include pad() {
+  @include largePad() {
     height: 400px;
   }
 }
@@ -23,7 +23,7 @@
 .input-group-append {
   button {
     width: 120px;
-    @include pad() {
+    @include largePad() {
       width: 160px;
     }
   }
@@ -37,7 +37,7 @@
   font-weight: 900;
   line-height: 29px;
   width: 100%;
-  @include pad() {
+  @include largePad() {
     width: auto;
   }
   a {
@@ -49,7 +49,7 @@
 .bd-footer-copy {
   font-size: $font-size-sm;
   width: 100%;
-  @include pad() {
+  @include largePad() {
     width: auto;
   }
 }
@@ -57,7 +57,7 @@
   font-size: $font-size-sm;
   li {
     width: 100%;
-    @include pad() {
+    @include largePad() {
       width: auto;
     }
   }

@@ -2,7 +2,7 @@
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 100000;
+  z-index: 2;
   .navbar-brand {
     color: #fff;
     font-family: 'Raleway', sans-serif;
@@ -98,6 +98,23 @@
       color: $primary;
     }      
   }
+}
+.list-unstyled {
+  cursor: pointer;
+  a {
+    color: $body-color;
+    &:hover {
+      color: $primary;
+    }
+  }
+}
+.list-unstyled-secondary {
+  a {
+    color: $darkGray;
+    &:hover {
+      color: $primary;
+    }
+  }  
 }
 .collapsible-moreIcon {
   display: inline-block;
