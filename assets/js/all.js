@@ -10,10 +10,10 @@ $(document).ready(function () {
     spaceBetween: 30,
     grabCursor: true,
     breakpoints: {
-      768: {
+      576: {
         slidesPerView: 2
       },
-      1280: {
+      1024: {
         slidesPerView: 3
       }
     }

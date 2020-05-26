@@ -8,15 +8,12 @@
     <title>Boostrap Index</title>
     <!-- css -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="./assets/style/all.css">
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
   </head>
 
@@ -47,54 +44,86 @@
           <!-- mobile menu -->
           <div id="mySidepanel" class="sidepanel vh-100">
             <div class="container">
-              <div class="row">
-                <div class="col-sm d-flex flex-wrap justify-content-between align-items-center">
-                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                    <span class="material-icons">close</span>
-                  </a>
-                  <a href="#" class="mobile-shopping-car">
-                    <span class="material-icons nav-link-icon">shopping_cart</span>
-                  </a>
-                  <ul class="list-unstyled w-100 text-left m-0 p-0">
-                    <li class="">
-                      <a class="collapsible py-3 border-bottom border-dark d-flex justify-content-between align-items-center">
-                        <h4 class="h4 font-weight-normal">Product</h4>
-                        <span class="material-icons collapsible-moreIcon">expand_more</span>
-                        <span class="material-icons collapsible-lessIcon">expand_less</span>
-                      </a>
-                      <div class="collapsibleContent">
-                        <ul class="list-unstyled text-left text-darkGray m-0 p-0">
-                          <li class="my-3">All<sup>24</sup></li>
-                          <li class="mb-3">Bowl<sup>10</sup></li>
-                          <li class="mb-3">Cup<sup>8</sup></li>
-                          <li class="mb-3">Plate<sup>3</sup></li>
-                          <li class="pb-3 border-bottom border-dark">Vase<sup>3</sup></li>
-                        </ul>
-                      </div>
-                    </li>
-                    <li class="">
-                      <a class="collapsible py-3 border-bottom border-dark d-flex justify-content-between align-items-center">
-                        <h4 class="h4 font-weight-normal">Product</h4>
-                        <span class="material-icons collapsible-moreIcon">expand_more</span>
-                        <span class="material-icons collapsible-lessIcon">expand_less</span>
-                      </a>
-                      <div class="collapsibleContent">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                      </div>
-                    </li>
-                    <li class="">
-                      <a class="collapsible py-3 border-bottom border-dark d-flex justify-content-between align-items-center">
-                        <h4 class="h4 font-weight-normal">Product</h4>
-                        <span class="material-icons collapsible-moreIcon">expand_more</span>
-                        <span class="material-icons collapsible-lessIcon">expand_less</span>
-                      </a>
-                      <div class="collapsibleContent">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                      </div>
-                    </li>
-                  </ul>
-                </div>
-              </div>
+              <!-- <div class="row">
+                <div class="col-12"> -->
+                  <div class="w-100 d-flex flex-wrap justify-content-between align-items-center">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                      <span class="material-icons">close</span>
+                    </a>
+                    <a href="#" class="mobile-shopping-car">
+                      <span class="material-icons nav-link-icon">shopping_cart</span>
+                    </a>
+                    <ul class="list-unstyled w-100 text-left m-0 p-0">
+                      <li>
+                        <a class="collapsible py-3 border-bottom border-dark d-flex justify-content-between align-items-center">
+                          <h4 class="h4 font-weight-normal">Product</h4>
+                          <span class="material-icons collapsible-moreIcon">expand_more</span>
+                          <span class="material-icons collapsible-lessIcon">expand_less</span>
+                        </a>
+                        <div class="collapsibleContent">
+                          <ul class="list-unstyled list-unstyled-secondary text-left m-0 p-0">
+                            <li class="my-3">
+                              <a href="#">All<sup>24</sup></a>
+                            </li>
+                            <li class="mb-3">
+                              <a href="#">Bowl<sup>10</sup></a>
+                            </li>
+                            <li class="mb-3">
+                              <a href="#">Cup<sup>8</sup></a>
+                            </li>
+                            <li class="mb-3">
+                              <a href="#">Plate<sup>3</sup>
+                              </li>
+                            <li class="pb-3 border-bottom border-dark">
+                              <a href="#">Vase<sup>3</sup></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="collapsible py-3 border-bottom border-dark d-flex justify-content-between align-items-center">
+                          <h4 class="h4 font-weight-normal">Blog</h4>
+                          <span class="material-icons collapsible-moreIcon">expand_more</span>
+                          <span class="material-icons collapsible-lessIcon">expand_less</span>
+                        </a>
+                        <div class="collapsibleContent">
+                          <ul class="list-unstyled list-unstyled-secondary text-left m-0 p-0">
+                            <li class="my-3">
+                              <a href="#">All<sup>24</sup></a>
+                            </li>
+                            <li class="mb-3">
+                              <a href="#">Bowl<sup>10</sup></a>
+                            </li>
+                            <li class="mb-3">
+                              <a href="#">Cup<sup>8</sup></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <li>
+                        <a class="collapsible py-3 border-bottom border-dark d-flex justify-content-between align-items-center">
+                          <h4 class="h4 font-weight-normal">Contact</h4>
+                          <span class="material-icons collapsible-moreIcon">expand_more</span>
+                          <span class="material-icons collapsible-lessIcon">expand_less</span>
+                        </a>
+                        <div class="collapsibleContent">
+                          <ul class="list-unstyled list-unstyled-secondary text-left m-0 p-0">
+                            <li class="my-3">
+                              <a href="#">All<sup>24</sup></a>
+                            </li>
+                            <li class="mb-3">
+                              <a href="#">Bowl<sup>10</sup></a>
+                            </li>
+                            <li class="mb-3">
+                              <a href="#">Cup<sup>8</sup></a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                <!-- </div>
+              </div> -->
             </div>
           </div>
         </nav>
@@ -108,7 +137,7 @@
     <div class="banner-info-main mb-6">
       <div class="container">
         <div class="row">
-          <div class="col-md-5">
+          <div class="col-md-6 col-lg-5">
             <div class="banner-title">
               <h2 class="h2 banner-title-mainTitle mb-4">Enjoy Your Minimalist Lifestyle.</h2>
               <h4 class="h4 banner-title-subtitle font-weight-normal text-md-info">The best crafts in Taiwan. Get your free shipping on the first order.</h4>
@@ -140,13 +169,14 @@
         <div class="col-md-6">
           <div class="features-bg specialClays-bg mb-3 mb-md-0"></div>
         </div>
-        <div class="col col-md-1"></div>
-        <div class="col-md-4">
-          <div class="features-info d-flex flex-wrap justify-content-start align-items-center">
-            <div class="features-info-wrap">
-              <h4 class="h4 mb-3">Special Clays</h4>
-              <p class="mb-4 text-info">A general body formulation for contemporary earthenware is 25% kaolin, 25% ball clay, 35% quartz and 15% feldspar.</p>
-              <a href="#" class="text-primary">learn more</a>
+        <div class="col-md-6">
+          <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-10 col-lg-8">
+              <div class="features-info">
+                <h4 class="h4 mb-3">Special Clays</h4>
+                <p class="mb-4 text-info">A general body formulation for contemporary earthenware is 25% kaolin, 25% ball clay, 35% quartz and 15% feldspar.</p>
+                <a href="#" class="text-primary">learn more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -157,13 +187,14 @@
         <div class="col-md-6">
           <div class="features-bg lessIsMore-bg mb-3 mb-md-0"></div>
         </div>
-        <div class="col col-md-1"></div>
-        <div class="col-md-4">
-          <div class="features-info tetx-left text-md-right d-flex flex-wrap justify-content-start align-items-center">
-            <div class="features-info-wrap">
-              <h4 class="h4 mb-3">Special Clays</h4>
-              <p class="mb-4 text-info">A general body formulation for contemporary earthenware is 25% kaolin, 25% ball clay, 35% quartz and 15% feldspar.</p>
-              <a href="#" class="text-primary">learn more</a>
+        <div class="col-md-6">
+          <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-10 col-lg-8">
+              <div class="features-info">
+                <h4 class="h4 mb-3">Less is more</h4>
+                <p class="mb-4 text-info">Trimming pottery can transform a weighty Earth-bound pot into one that is a pleasure to hold, look at, and use.</p>
+                <a href="#" class="text-primary">learn more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -174,13 +205,14 @@
         <div class="col-md-6">
           <div class="features-bg marvelousDetail-bg mb-3 mb-md-0"></div>
         </div>
-        <div class="col col-md-1"></div>
-        <div class="col-md-4">
-          <div class="features-info d-flex flex-wrap justify-content-start align-items-center">
-            <div class="features-info-wrap">
-              <h4 class="h4 mb-3">Special Clays</h4>
-              <p class="mb-4 text-info">A general body formulation for contemporary earthenware is 25% kaolin, 25% ball clay, 35% quartz and 15% feldspar.</p>
-              <a href="#" class="text-primary">learn more</a>
+        <div class="col-md-6">
+          <div class="row h-100 justify-content-center align-items-center">
+            <div class="col-md-10 col-lg-8">
+              <div class="features-info">
+                <h4 class="h4 mb-3">Marvelous Detail</h4>
+                <p class="mb-4 text-info">In Craftsman, the art director, working with marketers, develops or creates an idea of a new creation.</p>
+                <a href="#" class="text-primary">learn more</a>
+              </div>
             </div>
           </div>
         </div>
@@ -193,10 +225,10 @@
 <section class="artDirector py-4 py-md-0 d-flex align-items-center mb-6 mb-md-7">
   <div class="container h-100">
     <div class="row h-100 justify-content-between align-content-between align-content-md-center">
-      <div class="col-12 col-md-4">
+      <div class="col-md-4">
         <h3 class="h3 text-white artDirector-h3">“I want to make the life more simple by crafts.”</h3>
       </div>
-      <div class="col-12 col-md-3">
+      <div class="col-md-3">
         <ul class="list-unstyled text-white m-0">
           <li><p class="mb-1 text-darkGray">Art Director</p></li>
           <li><h4 class="h4 font-weight-normal mb-3">hsiao-Ming Chen</h4></li>
@@ -211,9 +243,9 @@
 </section>
 
 <!-- Carousel Products -->
-<section class="carousel-products mb-6 mb-md-7">
-  <div class="container">
-    <div class="swiper-container">
+<section class="carousel-products mb-6 mb-md-7 overflow-hidden">
+  <!-- <div class="container"> -->
+    <div class="swiper-container container">
       <div class="swiper-wrapper">
           <div class="swiper-slide">
             <div class="card border-0">
@@ -274,17 +306,17 @@
           </div>
         </div>
     </div>
-  </div>
+  <!-- </div> -->
 </section>  
 
 
     <footer>
       <section class="subscribe">
-        <div class="subscribe-cnt h-100 py-4 py-md-0 d-flex align-items-center">
+        <div class="subscribe-cnt h-100 py-4 py-lg-0 d-flex align-items-center">
           <div class="container">
             <div class="row">
-              <div class="col-sm col-md-5">
-                <h2 class="h2 text-white mb-4 mb-md-6">Subscribe for news<br>and special offers!</h2>
+              <div class="col-lg-5">
+                <h2 class="h2 text-white mb-4 mb-lg-6">Subscribe for news<br>and special offers!</h2>
                 <div class="input-group">
                   <input type="text" class="form-control text-lightGray border-lightGray" placeholder="Your email address" aria-label="Recipient's username" aria-describedby="button-addon2">
                   <div class="input-group-append">
@@ -298,14 +330,14 @@
       </section>
       <section class="bd-footer">
         <div class="container">
-          <div class="py-4 py-md-0 d-flex flex-wrap flex-md-nowrap justify-content-between align-items-center">
-            <h2 class="bd-footer-logo d-inline-block mb-6 my-md-5 mr-md-3">
+          <div class="py-4 py-lg-0 d-flex flex-wrap flex-lg-nowrap justify-content-between align-items-center">
+            <h2 class="bd-footer-logo d-inline-block mb-6 my-lg-5 mr-lg-3">
               <a href="#" class="text-white">Craftsman</a>
             </h2>
-            <p class="bd-footer-copy text-lightGray m-0 order-3 order-md-2">© 2020. All Rights Reserved.</p>
-            <ul class="bd-footer-links p-0 mb-6 mb-md-0 d-flex flex-wrap flex-md-nowrap flex-grow-1 justify-content-end align-items-center order-2 order-md-3">
-              <li class="mb-3 mb-md-0 mr-md-6"><a href="#">Purchase Policy</a></li>
-              <li class="mb-3 mb-md-0 mr-md-6"><a href="#">Privacy Policy</a></li>
+            <p class="bd-footer-copy text-lightGray m-0 order-3 order-lg-2">© 2020. All Rights Reserved.</p>
+            <ul class="bd-footer-links p-0 mb-6 mb-lg-0 d-flex flex-wrap flex-lg-nowrap flex-grow-1 justify-content-end align-items-center order-2 order-lg-3">
+              <li class="mb-3 mb-lg-0 mr-lg-6"><a href="#">Purchase Policy</a></li>
+              <li class="mb-3 mb-lg-0 mr-lg-6"><a href="#">Privacy Policy</a></li>
               <li><a href="#">Terms & Conditions</a></li>
             </ul>
           </div>

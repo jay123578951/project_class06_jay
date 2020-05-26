@@ -11785,7 +11785,7 @@ a.text-darkGray:hover, a.text-darkGray:focus {
   position: fixed;
   width: 100%;
   top: 0;
-  z-index: 100000;
+  z-index: 2;
 }
 
 .bd-navbar .navbar-brand {
@@ -11904,6 +11904,26 @@ a.text-darkGray:hover, a.text-darkGray:focus {
   color: #0E8A00;
 }
 
+.list-unstyled {
+  cursor: pointer;
+}
+
+.list-unstyled a {
+  color: #121212;
+}
+
+.list-unstyled a:hover {
+  color: #0E8A00;
+}
+
+.list-unstyled-secondary a {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.list-unstyled-secondary a:hover {
+  color: #0E8A00;
+}
+
 .collapsible-moreIcon {
   display: inline-block;
 }
@@ -11946,7 +11966,7 @@ a.text-darkGray:hover, a.text-darkGray:focus {
   opacity: .5;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .subscribe {
     height: 400px;
   }
@@ -11960,7 +11980,7 @@ a.text-darkGray:hover, a.text-darkGray:focus {
   width: 120px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .input-group-append button {
     width: 160px;
   }
@@ -11978,7 +11998,7 @@ a.text-darkGray:hover, a.text-darkGray:focus {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .bd-footer-logo {
     width: auto;
   }
@@ -11993,7 +12013,7 @@ a.text-darkGray:hover, a.text-darkGray:focus {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .bd-footer-copy {
     width: auto;
   }
@@ -12007,7 +12027,7 @@ a.text-darkGray:hover, a.text-darkGray:focus {
   width: 100%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .bd-footer-links li {
     width: auto;
   }
@@ -12044,6 +12064,7 @@ a.text-darkGray:hover, a.text-darkGray:focus {
 
 .banner-info-main {
   position: absolute;
+  width: 100%;
   top: 50%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
@@ -12127,15 +12148,22 @@ a.text-darkGray:hover, a.text-darkGray:focus {
   background-size: cover;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 576px) {
   .features-bg {
-    height: 400px;
+    height: 300px;
   }
 }
 
-.features-info {
-  width: 100%;
-  height: 100%;
+@media (min-width: 768px) {
+  .features-bg {
+    height: 250px;
+  }
+}
+
+@media (min-width: 992px) {
+  .features-bg {
+    height: 400px;
+  }
 }
 
 .artDirector {
@@ -12151,6 +12179,16 @@ a.text-darkGray:hover, a.text-darkGray:focus {
 @media (min-width: 768px) {
   .artDirector-h3 {
     line-height: 1.2;
+  }
+}
+
+.swiper-container {
+  overflow: hidden;
+}
+
+@media (min-width: 1200px) {
+  .swiper-container {
+    overflow: initial;
   }
 }
 
@@ -12172,7 +12210,7 @@ a.text-darkGray:hover, a.text-darkGray:focus {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  z-index: 10;
+  z-index: 1;
 }
 
 .card-img-block .card-img-top {
