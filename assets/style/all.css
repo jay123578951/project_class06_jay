@@ -11759,6 +11759,38 @@ a.text-darkGray:hover, a.text-darkGray:focus {
   color: #0E8A00;
 }
 
+[data-aos="fade-sm-up"] {
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+      -ms-transform: translateY(30px);
+          transform: translateY(30px);
+}
+
+[data-aos="fade-sm-up"].aos-animate {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+[data-aos="scale-up"] {
+  -webkit-transform: scaleY(1);
+      -ms-transform: scaleY(1);
+          transform: scaleY(1);
+  -webkit-transform-origin: 100% 0%;
+      -ms-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+}
+
+[data-aos="scale-up"].aos-animate {
+  -webkit-transform: scaleY(0);
+      -ms-transform: scaleY(0);
+          transform: scaleY(0);
+  -webkit-transform-origin: 100% 0%;
+      -ms-transform-origin: 100% 0%;
+          transform-origin: 100% 0%;
+}
+
 .h2 {
   font-size: 2rem;
   font-weight: 700;
@@ -11782,9 +11814,6 @@ a.text-darkGray:hover, a.text-darkGray:focus {
 }
 
 .bd-navbar {
-  position: fixed;
-  width: 100%;
-  top: 0;
   z-index: 2;
 }
 
@@ -12174,12 +12203,6 @@ a.text-darkGray:hover, a.text-darkGray:focus {
 
 .artDirector-h3 {
   line-height: 1.5;
-}
-
-@media (min-width: 768px) {
-  .artDirector-h3 {
-    line-height: 1.2;
-  }
 }
 
 .swiper-container {
