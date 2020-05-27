@@ -20,3 +20,24 @@
   font-weight: $font-weight-bold;
   color: $primary;
 }
+
+// AOS Animation
+[data-aos="fade-sm-up"] {
+  opacity: 0;
+  transform: translateY(30px);
+
+  &.aos-animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+[data-aos="scale-up"] {
+  transform: scaleY(1);
+  transform-origin: 100% 0%;
+
+  &.aos-animate {
+    transform: scaleY(0);
+    transform-origin: 100% 0%;
+  }
+}

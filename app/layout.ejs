@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/style/all.css">
     <!-- js -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -19,7 +20,7 @@
 
   <body>
 
-    <header class="bd-navbar">
+    <header class="bd-navbar position-fixed w-100 t-0">
       <div class="container">
         <nav class="navbar p-0 flex-row-reverse flex-md-row">
           <!-- mobile shopping_car -->
@@ -169,6 +170,13 @@
 
     <script src="./assets/js/vendors.js"></script>
     <script src="./assets/js/all.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 600,
+        delay: 200,
+      });
+    </script>
   </body>
 
 </html>
